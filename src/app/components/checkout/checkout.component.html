@@ -1,0 +1,14 @@
+<!-- checkout.component.html -->
+<div class="checkout-form">
+    <!-- Add form elements for shipping and payment information -->
+  </div>
+  <div class="cart-summary">
+    <h2>Cart Summary</h2>
+    <div *ngFor="let item of cartItems" class="cart-item">
+      <p>{{ item.product.name }}</p>
+      <p>Price: ${{ item.product.price }}</p>
+      <p>Quantity: {{ item.quantity }}</p>
+    </div>
+    <p>Total Price: ${{ getTotalPrice() }}</p>
+  </div>
+  

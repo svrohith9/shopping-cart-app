@@ -1,0 +1,10 @@
+<!-- cart.component.html -->
+<div *ngFor="let item of cartItems" class="cart-item">
+    <img [src]="item.product.imageUrl" alt="{{ item.product.name }}" />
+    <h2>{{ item.product.name }}</h2>
+    <p>Price: ${{ item.product.price }}</p>
+    <p>Quantity: {{ item.quantity }}</p>
+    <button (click)="removeFromCart(item)">Remove</button>
+  </div>
+  <p>Total Price: ${{ getTotalPrice() }}</p>
+  
