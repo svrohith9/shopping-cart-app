@@ -1,27 +1,48 @@
-# SampleAngularApp
+# shopping-cart-app
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
+A simple shopping cart built with Angular 16. Add/remove items, update quantities, and see a running total — a compact reference for Angular component communication, RxJS, and routing.
 
-## Development server
+## Stack
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Angular 16
+- TypeScript 5
+- RxJS 7
+- Karma + Jasmine for unit tests
 
-## Code scaffolding
+## Run
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+npm install
+npm start
+```
+
+Opens on `http://localhost:4200/`. The app reloads on source changes.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+npm run build
+```
 
-## Running unit tests
+Artifacts land in `dist/`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Tests
 
-## Running end-to-end tests
+```bash
+npm test        # unit tests via Karma
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Project structure
 
-## Further help
+```
+src/
+├── app/          # Components, services, routes
+├── assets/       # Static assets
+├── index.html
+├── main.ts
+└── styles.css
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## License
+
+MIT
